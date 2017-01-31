@@ -1,0 +1,164 @@
+/*GLOBAL CLASSES*/
+body {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2 {
+  font-size: 42.4px;
+  font-weight: bold;
+}
+
+.nav.nav-link-active.menu {
+background-color: #643a79;
+}
+
+.portfolio {
+  color: black;
+}
+
+.button {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.padding-b {
+  padding-bottom: 50px;
+}
+
+.bg-purple {
+  background-color: var(--purplish);
+}
+
+.bg-topaz {
+  background-color: var(--topaz);
+}
+
+.bg-cream {
+  background-color: var(--dark-cream);
+}
+
+.bg-blue {
+  background-color: var(--denim-blue);
+}
+
+.bg-blue-2 {
+  background-color: var(--denim-blue-two);
+}
+
+.header-padding-b {
+  padding-bottom: 145px;
+}
+
+.services-padding-b-t{
+  padding-bottom: 145px;
+  padding-top: 119px;
+}
+
+.portfolio-padding-b-t{
+  padding-bottom: 145px;
+  padding-top: 119px;
+}
+
+.get-padding-b-t{
+  padding-bottom: 145px;
+  padding-top: 119px;
+}
+
+.heading-sections {
+  padding: 50px 50px;
+
+}
+
+/* Color palette */
+
+:root {
+  --dark-cream: #ffdd99;
+  --pale-grey: #e7f1f8;
+  --darkish-pink: #d74680;
+  --denim-blue: #3c5499;
+  --topaz: #17c2a4;
+  --white: #ffffff;
+  --purplish: #87509c;
+  --dark-slate-blue: #273a71;
+  --denim-blue-two: #344b8e;
+  --beige: #f7f3ea;
+  --warm-grey: #878787;
+  --dark-sky-blue: #30bae7;
+  --dusty-orange: #eb7d4b;
+  --topaz-two: #15c7a8;
+  --pale-grey-two: #dfe8ed;
+  --dusk: #3c4761;
+  --black: #393939;
+  --cool-blue: #487fbc;
+  --navy-blue: #00234a;
+  --light-blue-grey: #bedae8;
+  --warm-grey-two: #787878;
+  --light-blue-grey-two: #daeaf2;
+  --golden-rod: #f1c40f;
+  --squash: #f39c12;
+  --salmon: #f57b71;
+  --pale-red: #d84848;
+  --black-two: #000000;
+  --dark: #27283d;
+  --blush: #e88f8d;
+  --dusty-blue: #5d70a9;
+  --brick: #aa1f1f;
+  --sand: #e5c37f;
+  --lightblue: #5ad2eb;
+  --flat-blue: #3a6da5;
+  --cloudy-blue: #bdd1df;
+  --pinkish: #d97475;
+  --pale-peach: #ffecba;
+  --coral: #ff4444;
+}
+
+.button {
+  width: 293px;
+  height: 70px;
+  border: none;
+  border-radius: 4px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #b26a44;
+  background-color: #eb7d4b;
+  font-size: 17.5px;
+  font-weight: 600;
+}
+
+.button-two {
+  background-color: #30bae7;
+  border-bottom-color: #5f9dc2
+}
+
+a.chose {
+  background-color: #643a79;
+}
+
+a.main-nav{
+  font-size: 16px;
+  color: var(--white);
+}
+
+a.chose-portfolio {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 18px;
+}
+
+hr {
+  width: 87px;
+  height: 4px;
+  opacity: 0.15;
+  background-color: #000000;
+  background-color: var(--black-two);
+}
+
+input.form-control,
+textarea.form-control {
+  background-color: var(--dark-slate-blue);
+  }
+
+.form-control::-webkit-input-placeholder {
+   color: var(--white);
+}
