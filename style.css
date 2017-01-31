@@ -126,6 +126,12 @@ background-color: #643a79;
   font-weight: 600;
 }
 
+#button-1:active {
+  background-color: #b26a44;
+  border: none;
+}
+
+
 .button-two {
   background-color: #30bae7;
   border-bottom-color: #5f9dc2
