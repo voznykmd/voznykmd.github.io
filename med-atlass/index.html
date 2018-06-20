@@ -3,9 +3,14 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title></title>			
+		<title></title>
+
+		<link rel="icon" type="image/png" href="./img/favicon.png">		
+		<!-- <link rel="mask-icon" href="./img/icon.svg" color="blue"> -->
+		<link rel="icon" type="image/svg+xml" href="./img/favicon.svg">	
+
 		<link rel="stylesheet" type="text/css" href="./style.css"/>		
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	</head>
@@ -15,7 +20,10 @@
 			<div class="container">
 				<div class="header">
 					<div class="logo-container">
-						<img class="logo" src="./img/logo.jpg" alt="logo">	
+						<div class="logo-image-container">
+							<img class="logo" src="./img/logo.svg" alt="logo">	
+						</div>
+						<span class="logo-text">HMP Analytical Tool</span>
 					</div>
 
 					<nav class="nav">
@@ -63,178 +71,11 @@
 
 		<main role="main" class="main">
 
-			<!--
-				inline style for image proportions
-				100%   - 1:1 = square
-				56.25% - 16:9
-				75%    - 4:3
-				50%    - 1:2
-				200%   - 2:1
-
-				if element hasn't any inline-style then image proportion 1:1 100%
-			-->
-			<section class="graphic-wrapper" id="section3">
-				<div class="container">
-					<div class="graphic">
-						<h2 class="graphic-title"><span class="title-text">Analytical tools for HMP</span></h2>
-						<p>The Hospital Master Plan is a part of the reorganisation of the health
-							care system in Ukraine.
-							A Master Plan has the task of setting general conditions for the future development of the
-							hospital system.
-							This means getting away from accepted customs and making the necessary settings for a
-							future-oriented structure.
-							A master plan cannot and should not anticipate or replace detailed studies for each location regarding its individual circumstances and possibilities of development.
-							The restructured hospital sector will guarantee the improved access of the population to quality hospital care services to an equal extent for all citizens, as well as a hospital functional and cost-
-							efficient endowment.</p>
-
-						<h3 class="subtitle reveal-title">Lviv</h3>
-						<div class="panels">
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%"> 
-										<img class="panel-image" src="./img/picture-touch-up.svg" alt="Logos">		
-									</div>
-									<span class="item-text">Personnel</span>			
-								</div>
-								<h3 class="panel-name">Personnel</h3>										
-							</a>	
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%">
-										<img class="panel-image" src="./img/social-media-icons.svg" alt="Busines cards">
-									</div>
-									<span class="item-text">Infrastructure</span>
-								</div>
-								<h3 class="panel-name">Infrastructure</h3>								
-							</a>	
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%">
-										<img class="panel-image" src="./img/infographics.svg" alt="Open house flyers">
-									</div>
-									<span class="item-text">Discharges</span>
-								</div>
-								<h3 class="panel-name">Discharges</h3>									
-							</a>
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%">
-										<img class="panel-image" src="./img/business-cards.svg" alt="Listing presentations">
-									</div>
-									<span class="item-text">Surgeries</span>	
-								</div>							
-								<h3 class="panel-name">Surgeries</h3>								
-							</a>	
-						</div>
-
-						<h3 class="subtitle reveal-title">Poltava</h3>
-						<div class="panels">
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%">
-										<img class="panel-image" src="./img/picture-touch-up.svg" alt="Just listed Just sold">
-									</div>
-									<span class="item-text">Personnel</span>
-								</div>
-								<h3 class="panel-name">Personnel</h3>								
-							</a>	
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%">
-										<img class="panel-image" src="./img/social-media-icons.svg" alt="picture touch up">
-									</div>
-									<span class="item-text">Infrastructure</span>
-								</div>
-								<h3 class="panel-name">Infrastructure</h3>								
-							</a>	
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%">
-										<img class="panel-image" src="./img/infographics.svg" alt="Infographics">
-									</div>
-									<span class="item-text">Discharges</span>
-								</div>
-								<h3 class="panel-name">Discharges</h3>								
-							</a>	
-							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
-								<div class="item-container">
-									<div class="adapt-container" style="padding-bottom: 80%">
-										<img class="panel-image" src="./img/business-cards.svg" alt="Mailers">
-									</div>
-									<span class="item-text">Surgeries</span>
-								</div>
-								<h3 class="panel-name">Surgeries</h3>								
-							</a>			
-						</div>
-					</div>
-				</div>	
-			</section>
-			
-			
-
-			<section class="services-wrapper" id="section2">				
-				<img class="parallax_scene1" src="./img/med-history1.jpg" alt="photo">				
-				</div>
-				<div class="container">
-					<div class="services">
-						<h2 class="services-main-title">Lorem ipsum dolor.</h2>
-						<h3 class="services-title">The Hospital Master Plan is a part of the reorganisation of the health
-							care system in Ukraine.
-							A Master Plan has the task of setting general conditions for the future development of the
-							hospital system.
-							This means getting away from accepted customs and making the necessary settings for a
-							future-oriented structure.
-							A master plan cannot and should not anticipate or replace detailed studies for each location regarding its individual circumstances and possibilities of development.
-							The restructured hospital sector will guarantee the improved access of the population to quality hospital care services to an equal extent for all citizens, as well as a hospital functional and cost-
-							efficient endowment.</h3>
-					</div>
-				</div>
-			</section>
-
-			<section class="analiz-wrapper">
-				<div class="container">
-					<div class="analiz">
-						<h2 class="analiz-title reveal-title">Lviv</h2>
-						<iframe src="https://dane-i-analizy.pl/raport/1830-lviv-eng/zobacz/atlas.html" frameborder="0" style="border:none; overflow:hidden; width:850px; min-width: 100%; height:800px;" allowTransparency="true"> </iframe>
-					</div>
-				</div>
-			</section>
-			<section class="analiz-wrapper">
-				<div class="container">
-					<div class="analiz">
-						<h2 class="analiz-title reveal-title">Poltava</h2>
-						<iframe src="https://dane-i-analizy.pl/raport/1829-poltava-eng/zobacz/atlas.html" frameborder="0" style="border:none; overflow:hidden; width:850px; min-width: 100%; height:800px;" allowTransparency="true"> </iframe>
-					</div>
-				</div>
-			</section>				
-
-			<section class="services-wrapper" id="section0">				
-				<img class="parallax_scene0" src="./img/med-history0.jpg" alt="photo">				
-				</div>
-				<div class="container">
-					<div class="services">
-						<h2 class="services-main-title">Lorem ipsum.</h2>
-						<h3 class="services-title">The Hospital Master Plan is a part of the reorganisation of the health
-							care system in Ukraine.
-							A Master Plan has the task of setting general conditions for the future development of the
-							hospital system.
-							This means getting away from accepted customs and making the necessary settings for a
-							future-oriented structure.
-							A master plan cannot and should not anticipate or replace detailed studies for each location regarding its individual circumstances and possibilities of development.
-							The restructured hospital sector will guarantee the improved access of the population to quality hospital care services to an equal extent for all citizens, as well as a hospital functional and cost-
-							efficient endowment.</h3>
-						
-					</div>
-				</div>
-			</section>
-
-			<section class="about-wrapper" id="section1">
+			<section class="about-wrapper">
 				<div class="container">
 					<div class="about">
-						<h2 class="about-title">Wind of changes</h2>
-						<div class="img-container">
-							<img class="about-img" src="./img/ukraine.png" alt="photo">
-						</div>						
+						<h2 class="about-title">Іntroduction</h2>						
+						<img class="about-img" src="./img/pic3.png" alt="photo">												
 						<p class="about-text">The old Soviet healthcare system is a comprehensive system based mainly on three types
 							of hospitals: local, district and republican. Meanwhile, the local and district hospitals were
 							general hospitals with four or five basic departments and some additional specialities; the
@@ -252,9 +93,174 @@
 							the situation needs to be changed.</p>		
 					</div>						
 				</div>							
+			</section>		
+
+			<!--
+				inline style for image proportions
+				100%   - 1:1 = square
+				56.25% - 16:9
+				75%    - 4:3
+				50%    - 1:2
+				200%   - 2:1
+
+				if element hasn't any inline-style then image proportion 1:1 100%
+			-->
+			<section class="graphic-wrapper">
+				<div class="container">
+					<div class="graphic">
+						<h3 class="graphic-title"><span class="title-text">Analytical tools for HMP</span></h3>
+						<p>The Hospital Master Plan is a part of the reorganisation of the health
+							care system in Ukraine.
+							A Master Plan has the task of setting general conditions for the future development of the
+							hospital system.
+							This means getting away from accepted customs and making the necessary settings for a
+							future-oriented structure.
+							A master plan cannot and should not anticipate or replace detailed studies for each location regarding its individual circumstances and possibilities of development.
+							The restructured hospital sector will guarantee the improved access of the population to quality hospital care services to an equal extent for all citizens, as well as a hospital functional and cost-
+							efficient endowment.</p>
+
+						<h3 class="subtitle reveal-title">Lviv</h3>
+						<div class="panels">
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%"> 
+										<img class="panel-image" src="./img/doctor.svg" alt="Logos">		
+									</div>
+									<span class="item-text">Personnel</span>			
+								</div>
+								<h3 class="panel-name">Personnel</h3>										
+							</a>	
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%">
+										<img class="panel-image" src="./img/hospital.svg" alt="Busines cards">
+									</div>
+									<span class="item-text">Infrastructure</span>
+								</div>
+								<h3 class="panel-name">Infrastructure</h3>								
+							</a>	
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%">
+										<img class="panel-image" src="./img/medical-history.svg" alt="Open house flyers">
+									</div>
+									<span class="item-text">Discharges</span>
+								</div>
+								<h3 class="panel-name">Discharges</h3>									
+							</a>
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%">
+										<img class="panel-image" src="./img/surgery.svg" alt="Listing presentations">
+									</div>
+									<span class="item-text">Surgeries</span>	
+								</div>							
+								<h3 class="panel-name">Surgeries</h3>								
+							</a>	
+						</div>
+
+						<h3 class="subtitle reveal-title">Poltava</h3>
+						<div class="panels">
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%">
+										<img class="panel-image" src="./img/doctor.svg" alt="Just listed Just sold">
+									</div>
+									<span class="item-text">Personnel</span>
+								</div>
+								<h3 class="panel-name">Personnel</h3>								
+							</a>	
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%">
+										<img class="panel-image" src="./img/hospital.svg" alt="picture touch up">
+									</div>
+									<span class="item-text">Infrastructure</span>
+								</div>
+								<h3 class="panel-name">Infrastructure</h3>								
+							</a>	
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%">
+										<img class="panel-image" src="./img/medical-history.svg" alt="Infographics">
+									</div>
+									<span class="item-text">Discharges</span>
+								</div>
+								<h3 class="panel-name">Discharges</h3>								
+							</a>	
+							<a class="panel-item raised reveal" href="#modal-1" data-modal-open>
+								<div class="item-container">
+									<div class="adapt-container" style="padding-bottom: 80%">
+										<img class="panel-image" src="./img/surgery.svg" alt="Mailers">
+									</div>
+									<span class="item-text">Surgeries</span>
+								</div>
+								<h3 class="panel-name">Surgeries</h3>								
+							</a>			
+						</div>
+					</div>
+				</div>	
 			</section>
 			
-			<section class="check-wrapper" id="section4">
+			
+
+			<section class="services-wrapper">				
+				<img class="parallax_scene1" src="./img/1.jpg" alt="photo">				
+				</div>
+				<div class="container">
+					<div class="services">
+						<h2 class="services-title">Hospital Master Plan</h2>
+						<h3 class="check-text text-white">The Hospital Master Plan is a part of the reorganisation of the health
+							care system in Ukraine.
+							A Master Plan has the task of setting general conditions for the future development of the
+							hospital system.
+							This means getting away from accepted customs and making the necessary settings for a
+							future-oriented structure.
+							A master plan cannot and should not anticipate or replace detailed studies for each location regarding its individual circumstances and possibilities of development.
+							The restructured hospital sector will guarantee the improved access of the population to quality hospital care services to an equal extent for all citizens, as well as a hospital functional and cost-
+							efficient endowment.</h3>
+					</div>
+				</div>
+			</section>
+
+			<section class="analiz-wrapper">
+				<div class="container">
+					<div class="analiz">
+						<h2 class="analiz-title reveal-title">Lviv</h2>
+						<iframe src="http://dane-i-analizy.pl/raport/1830-lviv-eng/zobacz/atlas.html" frameborder="0" style="border:none; overflow:hidden; width:850px; min-width: 100%; height:800px;" allowTransparency="true"> </iframe>
+					</div>
+				</div>
+			</section>
+			<section class="analiz-wrapper">
+				<div class="container">
+					<div class="analiz">
+						<h2 class="analiz-title reveal-title">Poltava</h2>
+						<iframe src="http://dane-i-analizy.pl/raport/1829-poltava-eng/zobacz/atlas.html" frameborder="0" style="border:none; overflow:hidden; width:850px; min-width: 100%; height:800px;" allowTransparency="true"> </iframe>
+					</div>
+				</div>
+			</section>				
+
+			<section class="services-wrapper">				
+				<img class="parallax_scene0" src="./img/2.jpg" alt="photo">				
+				</div>
+				<div class="container">
+					<div class="services">
+						<h2 class="services-title">Hospital Master Plan</h2>
+						<h3 class="check-text text-white">The Hospital Master Plan is a part of the reorganisation of the health
+							care system in Ukraine.
+							A Master Plan has the task of setting general conditions for the future development of the
+							hospital system.
+							This means getting away from accepted customs and making the necessary settings for a
+							future-oriented structure.
+							A master plan cannot and should not anticipate or replace detailed studies for each location regarding its individual circumstances and possibilities of development.
+							The restructured hospital sector will guarantee the improved access of the population to quality hospital care services to an equal extent for all citizens, as well as a hospital functional and cost-
+							efficient endowment.</h3>
+						
+					</div>
+				</div>
+			</section>			
+			
+			<section class="check-wrapper">
 				<div class="container">
 					<div class="check">					
 						<h2 class="check-title">The Hospital Master Plan</h2>
@@ -273,13 +279,12 @@
 				</div>			
 			</section>	
 
-			<section class="services-wrapper" id="section5">				
-				<img class="parallax_scene2" src="./img/med-history2.jpg" alt="photo">				
-				</div>
+			<section class="services-wrapper">				
+				<img class="parallax_scene2" src="./img/3.jpeg" alt="photo">	
 				<div class="container">
 					<div class="services">
-						<h2 class="services-main-title">Lorem ipsum dolor.</h2>
-						<h3 class="services-title">The Hospital Master Plan is a part of the reorganisation of the health
+						<h2 class="services-title">HMP</h2>
+						<h3 class="check-text text-white">The Hospital Master Plan is a part of the reorganisation of the health
 							care system in Ukraine.
 							A Master Plan has the task of setting general conditions for the future development of the
 							hospital system.
@@ -294,8 +299,11 @@
 
 			
 			<div id="modal-1" style="display:none">
-				<iframe src="https://dane-i-analizy.pl/raport/1830-lviv-eng/zobacz/atlas.html" frameborder="0" style="border:none; overflow:hidden; width:850px; min-width: 100%; height:800px;" allowTransparency="true"> </iframe>
-			</div>			
+				<iframe src="http://dane-i-analizy.pl/raport/1830-lviv-eng/zobacz/atlas.html" frameborder="0" style="border:none; overflow:hidden; width:850px; min-width: 100%; height:800px;" allowTransparency="true"> </iframe>
+			</div>
+			<div id="modal-2" style="display:none">
+				<img class="img" src="http://i.imgur.com/AzKAV.jpg" alt="Just Can't Reach.">
+			</div>
 
 			<div class="modal">
 			  <div class="modal-inner">
