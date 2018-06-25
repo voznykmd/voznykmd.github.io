@@ -75,3 +75,58 @@ rev.reveal('.reveal-title', {
   duration: 1500,
   delay: 0
 });
+
+// city-button & cityAtlas
+
+var cityButton = document.querySelectorAll(".city-button");
+var cityAtlas = document.querySelectorAll(".js-atlas");
+
+if (cityAtlas && cityAtlas.length > 0 && cityButton && cityButton.length > 0) {
+  var cityButtonActive = document.querySelector(".city-button.active"),
+      cityAtlasOpen = document.querySelector(".js-atlas.open");
+
+  if (!cityButtonActive && !cityAtlasOpen) {
+    cityButtonActive = document.querySelectorAll(".city-button")[0];
+    cityButtonActive.classList.add("active");
+  }
+
+  if (cityButtonActive && !cityAtlasOpen) {
+    cityAtlas.forEach(function (atlas) {
+      if (cityButtonActive.name === atlas.id) {
+        cityAtlasOpen = atlas;
+      }
+    });
+    cityAtlasOpen.classList.add("open");
+  }
+
+  if (!cityButtonActive && cityAtlasOpen) {
+    cityButton.forEach(function (button) {
+      if (cityAtlasOpen.id === button.name) {
+        cityButtonActive = button;
+      }
+    });
+    cityButtonActive.classList.add("active");
+  }
+
+  cityButton.forEach(function (button) {
+    button.addEventListener("click", changeCityAtlas);
+  });
+}
+
+function changeCityAtlas(e) {
+  e.preventDefault();
+  if (e.target.name !== cityAtlasOpen.id) {
+
+    cityButtonActive.classList.remove("active");
+    e.target.classList.add("active");
+    cityButtonActive = e.target;
+
+    cityAtlasOpen.classList.remove("open");
+    cityAtlas.forEach(function (city) {
+      if (city.id === e.target.name) {
+        city.classList.add("open");
+        cityAtlasOpen = city;
+      }
+    });
+  }
+}
