@@ -1,5 +1,41 @@
 'use strict';
 
+//DOM-i18n
+var langButton = document.querySelectorAll('.js-lang'),
+    langActive = document.querySelector(".js-lang.active");
+var i18n = domI18n({
+  selector: '[data-translatable]',
+  separator: ' // ',
+  languages: ['en-US', 'ua', 'de', 'fr'],
+  defaultLanguage: 'en'
+});
+if (!langActive) {
+  langButton.forEach(function (button) {
+    if (button.name === 'en-US') {
+      langActive = button;
+    }
+  });
+  langActive.classList.add("active");
+  i18n.changeLanguage('en-US');
+}
+
+langButton.forEach(function (button) {
+  button.addEventListener("click", changeLang);
+});
+
+function changeLang(e) {
+  e.preventDefault();
+
+  if (e.target.name !== langActive.name) {
+
+    langActive.classList.remove("active");
+    e.target.classList.add("active");
+    langActive = e.target;
+
+    i18n.changeLanguage(langActive.name);
+  }
+}
+
 // HEADROOM.JS
 var headroomEl = document.querySelector("header");
 var options = {
@@ -61,17 +97,17 @@ rev.reveal('.reveal', {
   opacity: 0,
   scale: 0.9,
   origin: 'bottom',
-  distance: '50px',
-  duration: 1000,
-  delay: 100
+  distance: '20px',
+  duration: 1500,
+  delay: 0
 });
 
 rev.reveal('.reveal-title', {
   viewFactor: 0.3,
   opacity: 0,
-  scale: 0.5,
+  scale: 0,
   origin: 'right',
-  distance: '100px',
+  distance: '20px',
   duration: 1500,
   delay: 0
 });
