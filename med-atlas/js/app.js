@@ -90,7 +90,7 @@ var vanillaModal = new VanillaModal.default({
 
 //REVEAL
 var rev = new ScrollReveal({
-  reset: false,
+  reset: true,
   mobile: true,
   easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
 });
@@ -169,6 +169,8 @@ function changeCityAtlas(e) {
   }
 }
 
+/*================== Full View ====================*/
+
 var fullViewButton = document.querySelector('#full-view');
 if (fullViewButton) {
   fullViewButton.addEventListener("click", fullViewAnaliz);
@@ -180,5 +182,75 @@ function fullViewAnaliz(e) {
   console.log(linkFullView);
   if (linkFullView) {
     window.open(linkFullView);
+  }
+}
+
+/*======================= index-link instruction-link===========================*/
+var instructionLink = document.querySelector('#instruction-link'),
+    indexLink = document.querySelector('#index-link'),
+    instructionSection = document.querySelector('#instruction-section'),
+    indexSection = document.querySelector('#index-section');
+
+indexLink.addEventListener("click", indexOpen);
+instructionLink.addEventListener("click", instructionOpen);
+
+function indexOpen(e) {
+  e.preventDefault();
+  if (instructionSection && indexSection) {
+    if (!indexSection.classList.contains("open")) {
+      if (instructionSection.classList.contains("open")) {
+        instructionSection.classList.remove("open");
+      }
+      indexSection.classList.add("open");
+      window.scrollTo(0, 0);
+      rev.reveal('.reveal', {
+        viewFactor: 0.3,
+        opacity: 0,
+        scale: 0.9,
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1500,
+        delay: 0
+      });
+      rev.reveal('.reveal-title', {
+        viewFactor: 0.3,
+        opacity: 0,
+        scale: 0,
+        origin: 'right',
+        distance: '20px',
+        duration: 1500,
+        delay: 0
+      });
+    }
+  }
+}
+function instructionOpen(e) {
+  e.preventDefault();
+  if (instructionSection && indexSection) {
+    if (!instructionSection.classList.contains("open")) {
+      if (indexSection.classList.contains("open")) {
+        indexSection.classList.remove("open");
+      }
+      instructionSection.classList.add("open");
+      window.scrollTo(0, 0);
+      rev.reveal('.reveal', {
+        viewFactor: 0.3,
+        opacity: 0,
+        scale: 0.9,
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1500,
+        delay: 0
+      });
+      rev.reveal('.reveal-title', {
+        viewFactor: 0.3,
+        opacity: 0,
+        scale: 0,
+        origin: 'right',
+        distance: '20px',
+        duration: 1500,
+        delay: 0
+      });
+    }
   }
 }
